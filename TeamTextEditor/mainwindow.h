@@ -46,18 +46,18 @@ public:
 
     void MergeFormat(QTextCharFormat fmt);
 public slots:
-    void OnExit() {}
-    void OnOpenFile(){}
-    void OnSaveFile(){}
+    void OnExit();
+    void OnOpenFile();
+    void OnSaveFile();
     void OnNewFile();
 
-    void OnTextUndo(){}
-    void OnTextRedo(){}
-    void OnTextCut(){}
-    void OnTextCopy(){}
-    void OnTextPaste(){}
+    void OnTextUndo();
+    void OnTextRedo();
+    void OnTextCut();
+    void OnTextCopy();
+    void OnTextPaste();
 
-    void OnTextUnderline(){}
+    void OnTextUnderline();
     void OnTextBold(){}
     void OnTextColor(){}
     void OnTextFont(){}

@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include <QFileInfo>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -144,4 +145,127 @@ void MainWindow::OnNewFile()
 
         }
     }
+}
+
+// 退出
+void MainWindow::OnExit()
+{
+    close();
+}
+
+void MainWindow::SetFileName(const QString& fileName)
+{
+    m_fileName = fileName;
+    textEdit->document()->setModified(false);
+    QString title;
+    if(fileName.isEmpty())
+    {
+        title = "untitled";
+    }
+    else
+    {
+        title = QFileInfo(fileName).fileName();
+    }
+    setWindowModified(false);
+}
+
+// 打开文件
+void MainWindow::OnOpenFile()
+{
+    QString path = ShowFileDialog(QFileDialog::AcceptOpen);
+    SetFileName(path);
+    if(path != "")
+    {
+        QFile file(path);
+
+        if( file.open(QIODevice::ReadOnly | QIODevice::Text) )
+        {
+            textEdit->setPlainText(QString(file.readAll()));            //读取文件的所有数据并导入到编辑组件
+            file.close();
+            setWindowTitle("[" + path + "]");
+        }
+        else
+        {
+            //+++++ 提示出错 +++++
+        }
+    }
+}
+
+//保存文件
+QString MainWindow::SaveData(QString path)
+{
+    QString res = path;
+    if(res=="")
+        res = ShowFileDialog(QFileDialog::AcceptSave);
+
+    if(res!= "")
+    {
+        QFile file(res);
+        if( file.open(QIODevice::WriteOnly | QIODevice::Text) )
+        {
+            QTextStream out(&file);
+            out << textEdit->toPlainText();
+            file.close();
+            setWindowTitle("[" + res + "]");
+        }
+        else
+        {
+            //+++++ 文件打开错误提示 +++++
+            res = "";
+        }
+    }
+    return res;
+}
+
+
+void MainWindow::OnSaveFile()
+{
+    QString path = SaveData(m_fileName);
+    if(path!="")
+    {
+        m_fileName = path;
+    }
+}
+
+
+void MainWindow::OnTextUndo()
+{
+    textEdit->undo();
+}
+
+void MainWindow::OnTextRedo()
+{
+    textEdit->redo();
+}
+
+void MainWindow::OnTextCut()
+{
+    textEdit->cut();
+}
+
+void MainWindow::OnTextCopy()
+{
+    textEdit->copy();
+}
+
+void MainWindow::OnTextPaste()
+{
+    textEdit->paste();
+}
+
+void MainWindow::MergeFormat(QTextCharFormat fmt)
+{
+    QTextCursor cursor = textEdit->textCursor();
+    if (!cursor.hasSelection()) {
+        cursor.select(QTextCursor::WordUnderCursor);
+    }
+    cursor.mergeCharFormat(fmt);
+}
+
+void MainWindow::OnTextUnderline()
+{
+    bool check = true;
+    QTextCharFormat fmt;
+    fmt.setFontItalic(check?true:false);
+    MergeFormat(fmt);
 }
