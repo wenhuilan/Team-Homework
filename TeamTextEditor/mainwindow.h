@@ -23,7 +23,7 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-private:
+public:
     QString m_fileName;
     QTextEdit* textEdit;
     QListWidget* textList;
@@ -45,7 +45,6 @@ public:
     QString ShowFileDialog(QFileDialog::AcceptMode mode);
 
     void MergeFormat(QTextCharFormat fmt);
-
 public slots:
     void OnExit() {}
     void OnOpenFile(){}

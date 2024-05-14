@@ -32,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
     menuFile->addAction(exitAct);
     menuFile->addAction(saveAct);
     menuFile->addSeparator();
+
     // 文件菜单栏的消息处理
     connect(newAct,SIGNAL(triggered(bool)),this,SLOT(OnNewFile()));
     connect(openAct,SIGNAL(triggered(bool)),this,SLOT(OnOpenFile()));
@@ -50,6 +51,7 @@ MainWindow::MainWindow(QWidget *parent)
     menuEdit->addAction(undoAct);
     menuEdit->addAction(redoAct);
     menuEdit->addSeparator();
+
     // 编辑菜单栏消息处理
     connect(copyAct,SIGNAL(triggered(bool)),this,SLOT(OnTextCopy()));
     connect(cutAct,SIGNAL(triggered(bool)),this,SLOT(OnTextCut()));
