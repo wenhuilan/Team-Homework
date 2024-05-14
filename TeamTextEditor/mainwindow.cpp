@@ -29,8 +29,8 @@ MainWindow::MainWindow(QWidget *parent)
     QAction* exitAct = new QAction(tr("exit"),this);
     menuFile->addAction(newAct);
     menuFile->addAction(openAct);
-    menuFile->addAction(exitAct);
     menuFile->addAction(saveAct);
+    menuFile->addAction(exitAct);
     menuFile->addSeparator();
 
     // 文件菜单栏的消息处理
@@ -74,12 +74,15 @@ MainWindow::MainWindow(QWidget *parent)
     //===== 工具栏 =====
     toolBar = new QToolBar(this);
     this->addToolBar(toolBar);
-    toolBar->setFloatable(false);//设置不允许浮动
-    toolBar->setMovable(false);//设置不允许移动
+    toolBar->setFloatable(false);       //设置不允许浮动
+    toolBar->setMovable(false);         //设置不允许移动
     toolBar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);//设置工具项为图片在文字上方
 
-    QAction *testAction = new QAction("Test 12345",this);
-    toolBar->addAction(testAction);
+    toolBar->addAction(copyAct);
+    toolBar->addAction(cutAct);
+    toolBar->addAction(pasteAct);
+    toolBar->addAction(undoAct);
+    toolBar->addAction(redoAct);
     //+++++ 更多工具待实现 +++++
 
     //===== 主要部分 =====
