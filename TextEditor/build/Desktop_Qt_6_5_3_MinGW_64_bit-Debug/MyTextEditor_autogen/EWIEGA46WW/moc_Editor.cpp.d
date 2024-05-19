@@ -1,5 +1,5 @@
-C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/EWIEGA46WW/moc_Editor.cpp: C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/Editor.h \
-  C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/moc_predefs.h \
+C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/EWIEGA46WW/moc_Editor.cpp: C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/Editor.h \
+  C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/moc_predefs.h \
   C:/MyApps/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
   C:/MyApps/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
   C:/MyApps/QT/6.5.3/mingw_64/include/QtCore/qalgorithms.h \

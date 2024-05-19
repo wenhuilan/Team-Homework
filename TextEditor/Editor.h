@@ -5,6 +5,7 @@
 #include <QTextEdit>
 
 class MainWindow;
+// 文本编辑器主体
 class Editor : public QTextEdit
 {
     Q_OBJECT

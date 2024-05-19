@@ -1,7 +1,11 @@
-#include "EditMenu.h"
 #include <QAction>
+#include <QColorDialog>
+#include <QFontDialog>
+#include "EditMenu.h"
+#include "Editor.h"
 #include "mainwindow.h"
 #include "ChoseCodeDialog.h"
+
 
 EditMenu::EditMenu(const QString& title,MainWindow* parent):QMenu(title,parent)
 {
@@ -34,9 +38,13 @@ EditMenu::EditMenu(const QString& title,MainWindow* parent):QMenu(title,parent)
 
     this->addSeparator();
 
-    QAction* actStyle = new QAction(tr("style"),this);
+    QAction* actStyle = new QAction(tr("color"),this);
     this->addAction(actStyle);
-    connect(actStyle,SIGNAL(triggered(bool)),this,SLOT(OnStyle()));
+    connect(actStyle,SIGNAL(triggered(bool)),this,SLOT(OnColor()));
+
+    QAction* actFont = new QAction(tr("font"),this);
+    this->addAction(actFont);
+    connect(actFont,SIGNAL(triggered(bool)),this,SLOT(OnFont()));
 
     QAction* actCodec = new QAction(tr("code"),this);
     this->addAction(actCodec);
@@ -45,39 +53,67 @@ EditMenu::EditMenu(const QString& title,MainWindow* parent):QMenu(title,parent)
     choseCodeDialog = new ChoseCodeDialog(mainWindow);
 }
 
+EditMenu::~EditMenu()
+{
+    delete choseCodeDialog;
+}
+
 void EditMenu::OnCopy()
 {
-
+    mainWindow->editor->copy();
 }
 
 void EditMenu::OnCut()
 {
-
+    mainWindow->editor->cut();
 }
 
 void EditMenu::OnRedo()
 {
-
+    mainWindow->editor->redo();
 }
 
 void EditMenu::OnUndo()
 {
-
+    mainWindow->editor->undo();
 }
 
 void EditMenu::OnPaste()
 {
-
+    mainWindow->editor->paste();
 }
 
-void EditMenu::OnStyle()
+// 修改字体样式
+void EditMenu::OnColor()
 {
-
+    QColor color;
+    QColor c = QColorDialog::getColor(color,this,"颜色选择框");
+    if(c.isValid())
+    {
+        color = c;
+        // 设置鼠标选中的文本颜色
+        mainWindow->editor->setTextColor(c);
+    }
 }
 
+void EditMenu::OnFont()
+{
+    bool ok;
+    QFont font;
+    QFont f = QFontDialog::getFont(&ok,font,this,"选择文本框要设置的字体");    //基础的用户字体对话框
+    if(ok)
+    {
+        font = f;
+        // 设置鼠标选中的文本的字体
+        mainWindow->editor->setCurrentFont(f);
+    }
+}
+
+// 修改编码
 void EditMenu::OnCodec()
 {
     choseCodeDialog->resize(200,350);
+    // 调出修改编码对话框
     if(choseCodeDialog->exec()==QDialog::Accepted)
     {
         choseCodeDialog->Accepted();

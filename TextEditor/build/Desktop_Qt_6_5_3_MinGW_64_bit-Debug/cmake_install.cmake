@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor
+# Install script for directory: C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/MyTextEditor")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/TextEditor")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor.exe")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MyTextEditor.exe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/MyTextEditor.exe")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

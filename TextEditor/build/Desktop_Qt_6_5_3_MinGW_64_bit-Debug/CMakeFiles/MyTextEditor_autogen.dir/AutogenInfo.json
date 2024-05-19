@@ -1,17 +1,17 @@
 {
-	"BUILD_DIR" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor",
+	"BUILD_DIR" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor",
 	"CMAKE_EXECUTABLE" : "C:/MyApps/QT/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/CMakeLists.txt",
-		"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
-		"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake",
+		"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/CMakeLists.txt",
+		"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
+		"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake",
-		"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake",
+		"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake",
@@ -24,7 +24,7 @@
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake",
-		"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake",
+		"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/CMakeRCInformation.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
@@ -280,45 +280,45 @@
 		"C:/MyApps/QT/6.5.3/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginAdditionalTargetInfo.cmake",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor",
-	"DEP_FILE" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor",
+	"DEP_FILE" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "MyTextEditor_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/ChoseCodeDialog.h",
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/ChoseCodeDialog.h",
 			"MU",
 			"EWIEGA46WW/moc_ChoseCodeDialog.cpp",
 			null
 		],
 		[
-			"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/EditMenu.h",
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/EditMenu.h",
 			"MU",
 			"EWIEGA46WW/moc_EditMenu.cpp",
 			null
 		],
 		[
-			"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/Editor.h",
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/Editor.h",
 			"MU",
 			"EWIEGA46WW/moc_Editor.cpp",
 			null
 		],
 		[
-			"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/FileMenu.h",
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/FileMenu.h",
 			"MU",
 			"EWIEGA46WW/moc_FileMenu.cpp",
 			null
 		],
 		[
-			"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/mainwindow.h",
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"MINGW_HAS_SECURE_API=1",
@@ -373,30 +373,46 @@
 		"-c",
 		"C:/MyApps/QT/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 12,
-	"PARSE_CACHE_FILE" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/MyTextEditor_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/MyTextEditor_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/MyApps/QT/6.5.3/mingw_64/./bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/MyApps/QT/6.5.3/mingw_64/./bin/uic.exe",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 5,
-	"SETTINGS_FILE" : "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/MyTextEditor_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/CMakeFiles/MyTextEditor_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/ChoseCodeDialog.cpp",
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/ChoseCodeDialog.cpp",
 			"MU",
 			null
 		],
-		[ "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/EditMenu.cpp", "MU", null ],
-		[ "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/Editor.cpp", "MU", null ],
-		[ "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/FileMenu.cpp", "MU", null ],
-		[ "C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/main.cpp", "MU", null ],
 		[
-			"C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/mainwindow.cpp",
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/EditMenu.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/Editor.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/FileMenu.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/mainwindow.cpp",
 			"MU",
 			null
 		]

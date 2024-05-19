@@ -1,5 +1,5 @@
-C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/EWIEGA46WW/moc_ChoseCodeDialog.cpp: C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/ChoseCodeDialog.h \
-  C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/moc_predefs.h \
+C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/EWIEGA46WW/moc_ChoseCodeDialog.cpp: C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/ChoseCodeDialog.h \
+  C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/MyTextEditor_autogen/moc_predefs.h \
   C:/MyApps/QT/6.5.3/mingw_64/include/QtCore/QStringEncoder \
   C:/MyApps/QT/6.5.3/mingw_64/include/QtCore/q20memory.h \
   C:/MyApps/QT/6.5.3/mingw_64/include/QtCore/q20type_traits.h \
@@ -346,4 +346,4 @@ C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/build/Desktop_Qt_6_5_3_MinGW_64_bit-D
   C:/MyApps/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/MyApps/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/MyApps/QT/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/wwwz/Desktop/Code/Qt/MyTextEditor/mainwindow.h
+  C:/Users/wwwz/Desktop/Git/SE/Team-Homework/TextEditor/mainwindow.h

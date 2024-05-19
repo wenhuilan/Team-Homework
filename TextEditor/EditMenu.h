@@ -4,19 +4,22 @@
 #include <QMenu>
 class MainWindow;
 class ChoseCodeDialog;
+
+// 菜单栏中的 edit 菜单
 class EditMenu : public QMenu
 {
     Q_OBJECT
 public:
     EditMenu(const QString& title,MainWindow* parent = nullptr);
-
+    ~EditMenu();
 public slots:
     void OnUndo();
     void OnRedo();
     void OnCopy();
     void OnCut();
     void OnPaste();
-    void OnStyle();
+    void OnColor();
+    void OnFont();
     void OnCodec();
 private:
     MainWindow* mainWindow;
