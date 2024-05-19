@@ -56,7 +56,7 @@ ChoseCodeDialog::ChoseCodeDialog(MainWindow* mainwindow)
 
     QPushButton* recoverBtn = new QPushButton("Recover",this);
     buttomLayout->addWidget(recoverBtn);
-    connect(recoverBtn,SIGNAL(pressed()),this,SLOT(reject()));  // recover按下，将编辑器中的文本设置为上次转码前的文本
+    connect(recoverBtn,SIGNAL(pressed()),this,SLOT(OnRecover()));  // recover按下，将编辑器中的文本设置为上次转码前的文本
 }
 
 ChoseCodeDialog::~ChoseCodeDialog()
@@ -80,12 +80,13 @@ void ChoseCodeDialog::Accepted()
     if(codecFuncMap.contains(selectedCodeType) && codecFuncMap[selectedCodeType])
     {
         res = codecFuncMap[selectedCodeType](res);              // 执行转码操作
+        hasEncoded = true;
         mainWindow->editor->setPlainText(res);                  // 修改文本
     }
 }
 
-void ChoseCodeDialog::Reject()
+void ChoseCodeDialog::OnRecover()
 {
-    if(recoverData=="")return;
     mainWindow->editor->setPlainText(recoverData);              // 重置文本为上次转码前的文本
+    this->close();
 }

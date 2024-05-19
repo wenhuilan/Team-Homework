@@ -87,7 +87,7 @@ QString FileMenu::SaveCurFile(QString path)
             QTextStream out(&file);
             out << mainWindow->editor->toPlainText();           // 简单的保存字符，并没有保存字体和颜色相关信息，此处需改进
             file.close();
-            setWindowTitle("Text - [ " + res + " ]");
+            mainWindow->setWindowTitle("Text - [ " + res + " ]");
         }
         else
         {
@@ -122,7 +122,7 @@ void FileMenu::OnFileOpen()
         {
             mainWindow->editor->setPlainText(QString(file.readAll()));      //读取文件的所有数据并导入到编辑组件
             file.close();
-            setWindowTitle("text - [ " + path + " ]");
+            mainWindow->setWindowTitle("text - [ " + path + " ]");
         }
         else
         {

@@ -6,7 +6,6 @@
 #include "mainwindow.h"
 #include "ChoseCodeDialog.h"
 
-
 EditMenu::EditMenu(const QString& title,MainWindow* parent):QMenu(title,parent)
 {
     mainWindow = parent;
@@ -120,6 +119,6 @@ void EditMenu::OnCodec()
     }
     else
     {
-        choseCodeDialog->Reject();
+
     }
 }
