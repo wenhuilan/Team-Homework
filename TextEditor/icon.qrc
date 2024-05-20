@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>document-file-exe.png</file>
+        <file>code.png</file>
+        <file>copy.png</file>
+        <file>cut.png</file>
+        <file>dark.png</file>
+        <file>edit.png</file>
+        <file>exit.png</file>
+        <file>eye.png</file>
+        <file>file.png</file>
+        <file>font.png</file>
+        <file>img.png</file>
+        <file>light.png</file>
+        <file>math.png</file>
+        <file>new.png</file>
+        <file>open.png</file>
+        <file>paste.png</file>
+        <file>redo.png</file>
+        <file>save.png</file>
+        <file>theme.png</file>
+        <file>undo.png</file>
+        <file>utf.png</file>
+        <file>color.png</file>
+    </qresource>
+</RCC>
