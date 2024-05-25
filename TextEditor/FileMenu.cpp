@@ -116,7 +116,10 @@ void FileMenu::OnFileNew()
                                                           QMessageBox::No);//通过QMessagebox里面的东西来
 
     curFileName.clear();
-    mainWindow->editor->setText(QString());
+    Editor* newEditor = new Editor();
+    newEditor->setText(QString());
+    newEditor->show();
+    mainWindow->editors.push_back(newEditor);
     if( curFileName == ""&& ok==QMessageBox::StandardButton::Yes)
         curFileName = ShowFileDialog(QFileDialog::AcceptSave);
 }
@@ -130,7 +133,12 @@ void FileMenu::OnFileOpen()
         QFile file(path);
         if( file.open(QIODevice::ReadOnly | QIODevice::Text) )
         {
-            mainWindow->editor->setPlainText(QString(file.readAll()));      //读取文件的所有数据并导入到编辑组件
+            Editor* newEditor = new Editor();
+            newEditor->setText(QString());
+            newEditor->setPlainText(QString(file.readAll()));      //读取文件的所有数据并导入到编辑组件
+            mainWindow->editor = newEditor;
+            mainWindow->editors.push_back(newEditor);
+            mainWindow->editor->show();
             file.close();
             mainWindow->setWindowTitle("text - [ " + path + " ]");
         }

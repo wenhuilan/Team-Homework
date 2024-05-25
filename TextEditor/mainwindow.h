@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <vector>
 
 class Editor;
 class MediaPlayerVideo;
@@ -26,7 +27,7 @@ public:
 
     QMenuBar* menuBar;
     Editor* editor;
-
+    std::vector<Editor*> editors;
     QString curFilePath;
 };
 #endif // MAINWINDOW_H

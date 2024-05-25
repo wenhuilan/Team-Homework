@@ -48,22 +48,22 @@ MainWindow::MainWindow(QWidget *parent)
     menuMath->setIcon(mathIcon);
 
     menuBar->addMenu(fileMenu);
-      menuBar->addSeparator();
+        menuBar->addSeparator();
     menuBar->addMenu( editMenu);
         menuBar->addSeparator();
     menuBar->addMenu(menuCode);
-          menuBar->addSeparator();
+        menuBar->addSeparator();
     menuBar->addMenu(menuTheme);
-              menuBar->addSeparator();
+        menuBar->addSeparator();
     menuBar->addMenu(menuImg);
-                menuBar->addSeparator();
+        menuBar->addSeparator();
     menuBar->addMenu(menuMath);
-      menuBar->addSeparator();
+        menuBar->addSeparator();
 
     editor = new Editor(this);
-      // editor->setStyleSheet("background-color:#6c6c6c;");
     editor->setStyleSheet("background-color:#aeffdo;");
     this->setCentralWidget(editor);
+    editors.push_back(editor);
 }
 
 MainWindow::~MainWindow()
