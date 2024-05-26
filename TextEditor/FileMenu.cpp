@@ -94,9 +94,17 @@ QString FileMenu::SaveCurFile(QString path)
         QFile file(res);
         if( file.open(QIODevice::WriteOnly | QIODevice::Text) )
         {
-            QTextStream out(&file);
-            out << mainWindow->editor->toPlainText();           // 简单的保存字符，并没有保存字体和颜色相关信息，此处需改进
+            // 简单的保存字符，并没有保存字体和颜色相关信息，此处需改进
+            //mainWindow->editor->setPlainText(QString(file.readAll()));      //读取文件的所有数据并导入到编辑组件
+            //加载大文件
+            QTextStream in(&file);
+            mainWindow->editor->clear();
+            while (!in.atEnd()) {
+                QString line = in.readLine();
+                mainWindow->editor->append(line);
+            }
             file.close();
+            
             mainWindow->setWindowTitle("Text - [ " + res + " ]");
         }
         else
