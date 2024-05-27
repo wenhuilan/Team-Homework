@@ -17,7 +17,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     this->setWindowTitle("文本编辑器");
     this->setStyleSheet("QMainWindow { background-color: black; }"); // 设置窗口的背景颜色为白色
-      this->setStyleSheet("QMainWindow { background-color: # c5ffdc; }");
 
     QIcon icon(":/document-file-exe.png");
     this->setWindowIcon(icon);
@@ -61,9 +60,9 @@ MainWindow::MainWindow(QWidget *parent)
       menuBar->addSeparator();
 
     editor = new Editor(this);
-      // editor->setStyleSheet("background-color:#6c6c6c;");
     editor->setStyleSheet("background-color:#aeffdo;");
     this->setCentralWidget(editor);
+       editors.push_back(editor);
 }
 
 MainWindow::~MainWindow()
