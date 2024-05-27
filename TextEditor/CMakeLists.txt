@@ -32,6 +32,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         CodeMenu.h CodeMenu.cpp
         PictureMenu.h PictureMenu.cpp
         MathMenu.h MathMenu.cpp
+        Highlighter.cpp
+        Highlighter.h
 
 
 
